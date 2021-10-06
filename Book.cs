@@ -20,5 +20,18 @@ namespace Book_Library
         /// The unique identifier of the book book
         /// </summary>
         public string ISBN13 { get; set; }
+
+        public Book()
+        {
+
+        }
+
+        public Book(string title, string author, int pageNumber, string isbn13)
+        {
+            Title = title;
+            Author = author;
+            PageNumber = pageNumber;
+            ISBN13 = isbn13;
+        }
     }
 }
